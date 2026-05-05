@@ -26,8 +26,8 @@
         </form>
 
         <div class="d-flex">
-            <button type="button" class="btn me-2 log" data-bs-toggle="modal" data-bs-target="#LogIn">
-                Log In  
+            <button type="button" class="btn me-2 log" data-bs-toggle="modal" data-bs-target="#SignIn">
+                Sign In  
             </button>
             <button type="button" class="btn sign" data-bs-toggle="modal" data-bs-target="#SignUp">
                 Sign Up
@@ -61,12 +61,110 @@
     </div>
     </nav>
 
+<div class="container">
+    <button class="dashboard-btn btn btn-primary p-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashboard"><</button>
+    <div class="row">
+        <div class="col-md-1">
+        </div>    
+        <div class="col-md-11">
+            <div class="overview-container container px-4">
+                <div class="mt-3">
+                    <h4>Welcome back, Soe Min Lin</h4>
+                    <p class="text-muted">Here's an overview of your documents and applications.</p>
+                </div>
+
+                <div class="row g-3 mt-2">
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <p>Active IDs and Licenses</p>
+                            <h4>3</h4>
+                            <p class="text-primary">All documents are valid</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <p>Expiring Soon</p>
+                            <h4>1</h4>
+                            <p class="text-warning">Within 30 days</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <p>Pending Applications</p>
+                            <h4>2</h4>
+                            <p class="text-purple">Awaiting review</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card stat-card">
+                            <p>Last Updated</p>
+                            <h4>2 days ago</h4>
+                            <p class="text-success">May 3, 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-4 p-3">
+                    <h6>My Documents Overview</h6>
+
+                    <div class="row g-3 mt-2">
+                        <div class="col-md-3">
+                            <div class="doc-card">
+                                <h6>Passport <span class="badge bg-success">Active</span></h6>
+                                <p>Name: Soe Min Lin</p>
+                                <p>Expiry: 12 Aug 2030</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:75%"></div>
+                                </div>
+                                <button class="btn btn-light btn-sm mt-2 w-100">View Details →</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="doc-card">
+                                <h6>National ID <span class="badge bg-success">Active</span></h6>
+                                <p>ID: 12/KaMaTa(N)123456</p>
+                                <p>Issued: 15 Mar 2022</p>
+                                <button class="btn btn-light btn-sm mt-2 w-100">View Details →</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="doc-card">
+                                <h6>Driver's License <span class="badge bg-success">Active</span></h6>
+                                <p>Class B</p>
+                                <p>Expiry: 18 May 2027</p>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:80%"></div>
+                                </div>
+                                <button class="btn btn-light btn-sm mt-2 w-100">View Details →</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="doc-card">
+                                <h6>Business Permit <span class="badge bg-warning">In Review</span></h6>
+                                <p>BP-2026-00123</p>
+                                <p>Submitted: 12 Jan 2025</p>
+                                <button class="btn btn-light btn-sm mt-2 w-100">View Details →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="offcanvas-container">
     <div class="offcanvas offcanvas-start" id="dashboard">
         <div class="offcanvas-header">
             <img src="#" alt="logo">
             <h5 class="offcanvas-title">Y.D.G<br><p class="fs-6">Dashboard</p></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            <button type="button" class="btn-close me-3" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body">
             <p class="dashboard-gray">DOCUMENTS</p>
@@ -75,21 +173,23 @@
                 <a href="#">Overview</a>
             </div>
             <div class="dashboard-item">
-                <i class="bi bi-house-fill"></i>
+                <i class="bi bi-globe"></i>
                 <a href="#">Passport</a>
             </div>
             <div class="dashboard-item">
-                <i class="bi bi-house-fill"></i>
+                <i class="bi bi-person-vcard-fill"></i>
                 <a href="#">National ID</a>
             </div>
             <div class="dashboard-item">
-                <i class="bi bi-house-fill"></i>
+                <i class="bi bi-car-front-fill"></i>
                 <a href="#">Driver's License</a>
+            </div>
+            <div class="dashboard-item">
+                <i class="bi bi-file-earmark-text-fill"></i>
+                <a href="#">Permits</a>
             </div>
         </div>
     </div>
-<button class="dashboard-btn btn btn-primary p-3 ms-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#dashboard"><</button>
 </div>
-
 </body>
 </html>
