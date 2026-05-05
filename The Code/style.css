@@ -1,17 +1,22 @@
+/*Nav & Footer*/
 .log{
     border: 1px solid black;
     border-radius: 7px;
     background-color: #6B86A3;
-    color: #ffff;
+    color: whitesmoke;
+}
+.log:hover{
+    border: 1px solid black;
+    
 }
 .sign{
     border: 1px solid black;
     border-radius: 7px;
-    background-color: #ffff;
+    background-color: whitesmoke;
     color: #6B86A3;
 }
-footer{
-    background-color: whitesmoke;
+.sign:hover{
+    border: 1px solid black;
 }
 .nav_btm{
     background-color: whitesmoke;
@@ -22,7 +27,12 @@ footer{
 .dropdown-item:hover{
     background-color: rgb(227, 227, 227);
 }
-.hero_body{
+footer{
+    background-color: whitesmoke;
+}
+
+/*Homepage*/
+body{
     background-color: rgb(238, 238, 238);
 }
 .hero-section {
@@ -58,52 +68,83 @@ footer{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.timeline{
+    position: relative;
+    margin-left: 20px;
+    border-left: 3px solid #6B86A3;
+}
+.timeline-item{
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline-content{
+    background-color: rgb(248, 248, 248);
+    padding: 15px;
+    border-radius: 20px;
+    max-width: 800px;
+    margin-left: 20px;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.circle{
+    position: absolute;
+    left: -10px;
+    width: 18px;
+    height: 18px;
+    background: #6B86A3;
+    border-radius: 50%;
+    top: 5px;
+}
+.card-body{
+    height: 180px;
+}
+.card img{
+    height: 200px;
+}
+.container-why{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-why .row {
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+}
+.why-icon{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.why-icon i {
+    font-size: 3rem;
+    color: #6B86A3;
+}
+.accordion-item, .accordion-header{
+    border: 1px solid black;
+    background-color: rgb(227, 227, 227);
+}
 .svc{
     border: 1px solid black;
     border-radius: 7px;
     background-color: #6B86A3;
-    color: #ffff;
+    color: whitesmoke;
+}
+.svc:hover{
+    border: 1px solid black;
+    
 }
 .ctn{
     border: 1px solid black;
     border-radius: 7px;
     background-color: #6B86A3;
-    color: #ffff;
+    color: whitesmoke;
 }
-
-/* dashboard.html css */
-.offcanvas-container{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-.offcanvas-container > .offcanvas{
-    width: 300px;
-}
-.dashboard-btn{
-    position: fixed;   
-}
-.dashboard-gray{
-    color: rgb(158, 158, 158);
-}
-.offcanvas-header > img{
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-    margin-bottom: 10px;
-}
-.dashboard-item{
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.dashboard-item:hover{
-    background-color: rgb(171, 217, 255);
-    color: blue;
-    cursor: pointer;
-}
-.dashboard-item > a{
-    padding-bottom: 10px;
-    color: black;
-    text-decoration: none;
+.ctn:hover{
+    border: 1px solid black;
+    
 }
