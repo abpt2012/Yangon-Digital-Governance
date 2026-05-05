@@ -22,18 +22,27 @@ footer{
 .dropdown-item:hover{
     background-color: rgb(227, 227, 227);
 }
+.hero_body{
+    background-color: rgb(238, 238, 238);
+}
 .hero-section {
     display: flex;
     align-items: center;
     gap: 50px;
-    margin: 20px;
+    justify-content: space-between;
+    overflow: hidden;
 }
 .hero-image {
-    flex: 0 0 35%;
+    height: 50%;
+    width: 50%;
 }
 .hero-image img {
     width: 100%;
+    max-width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hero-text{
+    padding-left: 50px;
 }
 .intro-section {
     display: flex;
@@ -50,6 +59,12 @@ footer{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .svc{
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #6B86A3;
+    color: #ffff;
+}
+.ctn{
     border: 1px solid black;
     border-radius: 7px;
     background-color: #6B86A3;
