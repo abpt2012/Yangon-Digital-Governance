@@ -70,3 +70,40 @@ footer{
     background-color: #6B86A3;
     color: #ffff;
 }
+
+/* dashboard.html css */
+.offcanvas-container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.offcanvas-container > .offcanvas{
+    width: 300px;
+}
+.dashboard-btn{
+    position: fixed;   
+}
+.dashboard-gray{
+    color: rgb(158, 158, 158);
+}
+.offcanvas-header > img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.dashboard-item{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.dashboard-item:hover{
+    background-color: rgb(171, 217, 255);
+    color: blue;
+    cursor: pointer;
+}
+.dashboard-item > a{
+    padding-bottom: 10px;
+    color: black;
+    text-decoration: none;
+}
