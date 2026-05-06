@@ -226,7 +226,6 @@ body{
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Progress */
 .progress {
     height: 6px;
     border-radius: 10px;
@@ -236,7 +235,6 @@ body{
     background-color: #0d6efd;
 }
 
-/* Custom purple text */
 .text-purple {
     color: #8b5cf6;
 }
