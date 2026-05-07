@@ -151,12 +151,29 @@ body{
     border: 1px solid black;
     
 }
+
 /*Contact*/
 .card-reg{
     max-width: 800px;
     margin: auto;
 }
 .msg{
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: #6B86A3;
+    color: whitesmoke;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.hero2{
+    background-image: url("/Images/hero_img.jpg");
+    padding: 200px;
+
+}
+.hero2-text{
+    text-align: center;
+    color: white;
+}
+.snd{
     border: 1px solid black;
     border-radius: 7px;
     background-color: #6B86A3;
