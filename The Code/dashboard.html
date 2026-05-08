@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-lg">
     <div class="container d-flex align-items-center justify-content-between">
         <a class="navbar-brand d-flex align-items-center" href="">
@@ -153,20 +153,39 @@
                         <div class="col-md-3">
                             <div class="doc-card">
                                 <h6>Passport <span class="badge bg-success">Active</span></h6>
-                                <p>Name: Soe Min Lin</p>
-                                <p>Expiry: 12 Aug 2030</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:75%"></div>
+                                <p class="small-gray-text">Name</p>
+                                <p>Soe Min Lin</p>
+                                <p class="small-gray-text">Passport No.</p>
+                                <p>MG123456</p>
+                                <p class="small-gray-text">Expiry Date</p>
+                                <p>12 Aug 2030</p>
+                                <div class="d-flex" style="justify-content: space-between;">
+                                    <p class="small-gray-text">Time remaining</p>
+                                    <p>4 years 6 months</p>
                                 </div>
-                                <button class="btn btn-light btn-sm mt-2 w-100">View Details</button>
+                                <div class="row align-items-center">
+                                    <div class="col-md-10">
+                                        <div class="progress" style="height: 10px;">
+                                            <div class="progress-bar" style="width:75%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex">
+                                        <span style="font-size: 12px;">75%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-light btn-sm mt-4 w-100">View Details</button>
                             </div>
                         </div>
  
                         <div class="col-md-3">
                             <div class="doc-card">
                                 <h6>National ID <span class="badge bg-success">Active</span></h6>
-                                <p>ID: 12/KaMaTa(N)123456</p>
-                                <p>Issued: 15 Mar 2022</p>
+                                <p class="small-gray-text">Name</p>
+                                <p>Soe Min Lin</p>
+                                <p class="small-gray-text">ID Number</p>
+                                <p>12/KaMaTa(N)123456</p>
+                                <p class="small-gray-text">Issue Date</p>
+                                <p>15 Mar 2022</p>
                                 <button class="btn btn-light btn-sm mt-2 w-100">View Details</button>
                             </div>
                         </div>
@@ -174,20 +193,40 @@
                         <div class="col-md-3">
                             <div class="doc-card">
                                 <h6>Driver's License <span class="badge bg-success">Active</span></h6>
+                                <p class="small-gray-text">License No.</p>
+                                <p>DL-987654</p>
+                                <p class="small-gray-text">License Type</p>
                                 <p>Class B</p>
-                                <p>Expiry: 18 May 2027</p>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:80%"></div>
+                                <p class="small-gray-text">Expiry Date</p>
+                                <p>18 May 2027</p>
+                                <div class="d-flex" style="justify-content: space-between;">
+                                    <p class="small-gray-text">Time remaining</p>
+                                    <p>1 year</p>
                                 </div>
-                                <button class="btn btn-light btn-sm mt-2 w-100">View Details</button>
+                                <div class="row align-items-center">
+                                    <div class="col-md-10">
+                                        <div class="progress" style="height: 10px;">
+                                            <div class="progress-bar" style="width:80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 d-flex">
+                                        <span style="font-size: 12px;">80%</span>
+                                    </div>
+                                </div>
+                                <button class="btn btn-light btn-sm mt-4 w-100">View Details</button>
                             </div>
                         </div>
  
                         <div class="col-md-3">
                             <div class="doc-card">
                                 <h6>Business Permit <span class="badge bg-warning">In Review</span></h6>
+                                <p class="small-gray-text">Permit Type</p>
+                                <p>Business Permit</p>
+                                <p class="small-gray-text">Application No.</p>
                                 <p>BP-2026-00123</p>
-                                <p>Submitted: 12 Jan 2025</p>
+                                <p class="small-gray-text">Submitted On</p>
+                                <p>12 Jan 2025</p>
+                                <p class="text-warning">Currently Under Review</p>
                                 <button class="btn btn-light btn-sm mt-2 w-100">View Details</button>
                             </div>
                         </div>
@@ -197,7 +236,7 @@
         </div>
     </div>
 </div>
- 
+
 <div class="offcanvas-container">
     <div class="offcanvas offcanvas-start" id="dashboard">
         <div class="offcanvas-header">
@@ -230,6 +269,61 @@
         </div>
     </div>
 </div>
+
+<footer class="text-center py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-3 mb-3">
+                    <h5>Yangon Digital Goverance</h5>
+                    <p>Fast, Secure Government Services at Your Fingertips.</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Dashboard</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Applications</a>
+                            <ul class="dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="">Apply</a></li>
+                                <li><a class="dropdown-item" href="">Renew</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 mb-3">
+                    <h5>Legal Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a href="" class="nav-link">Terms & Conditions</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Contact</h5>
+                    <p>Email: ydgmm@myanmar.gov.mm</p>
+                    <p>Phone: +95 9123469686</p>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter-x"></i>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 Yangon Digital Goverance. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
  

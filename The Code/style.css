@@ -309,3 +309,8 @@ body{
     background-color: #defff0;
     color: #198754;
 }
+.small-gray-text{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 0;
+}
