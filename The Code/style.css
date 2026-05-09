@@ -215,7 +215,7 @@ body{
 .offcanvas-container{
     display: flex;
     align-items: center;
-    height: 100vh;
+    
 }
 .offcanvas-container > .offcanvas{
     width: 300px;
@@ -266,7 +266,8 @@ body{
     margin-right: 10px;
 }
 .overview-container{
-    width: 200vh;
+    width: 100%;
+    margin-bottom: 20vh;
 }
 .stat-card {
     padding: 15px;
@@ -281,6 +282,7 @@ body{
     border-radius: 12px;
     border: 1px solid #eee;
     transition: 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
  
 .doc-card:hover {
@@ -344,4 +346,12 @@ body{
     font-size: 14px;
     color: gray;
     margin-bottom: 0;
+}
+.progress-text{
+    display: flex;
+    justify-content: space-between;
+}
+.quick-action-link{
+    text-decoration: none;
+    color: black;
 }
