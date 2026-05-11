@@ -244,20 +244,19 @@ body{
 .dashboard-item{
     display: flex;
     padding-top: 10px;
-    padding-bottom: 10px;
     padding-left: 20px;
 }
 .dashboard-item:hover{
     background-color: rgb(220, 238, 253);
     cursor: pointer;
 }
-.dashboard-item:hover > i, .dashboard-item:hover > a{
+.dashboard-item:hover > i, .dashboard-item:hover > p{
     color: blue;
 }
-.dashboard-item, .dashboard-item a, .dashboard-item i{
+.dashboard-item, .dashboard-item p, .dashboard-item i{
     transition: all 0.3s ease;
 }
-.dashboard-item > a{
+.offcanvas-link{
     padding-bottom: 10px;
     color: black;
     text-decoration: none;
