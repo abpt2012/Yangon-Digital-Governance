@@ -346,6 +346,19 @@ body{
     background-color: #defff0;
     color: #198754;
 }
+.small-gray-text{
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 0;
+}
+.progress-text{
+    display: flex;
+    justify-content: space-between;
+}
+.quick-action-link{
+    text-decoration: none;
+    color: black;
+}
 /*Services*/
 .hero3{
     background-image: url("/Images/hero_img.jpg");
