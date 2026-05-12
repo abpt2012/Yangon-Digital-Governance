@@ -98,9 +98,38 @@ body{
 }
 .card-avs{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 360px;
+}
+.card-avs img{
+    height: 300px;
 }
 .card-why{
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+    height: 320px;
+}
+
+.container-why{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-why .row {
+    justify-content: center;
+    display: flex;
+    gap: 24px;
+}
+.why-icon{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+
+.why-icon i {
+    font-size: 3rem;
+    color: #6B86A3;
 }
 .timeline{
     position: relative;
@@ -128,30 +157,6 @@ body{
     background: #6B86A3;
     border-radius: 50%;
     top: 5px;
-}
-
-.container-why{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-why .row {
-    justify-content: center;
-    display: flex;
-    gap: 24px;
-}
-.why-icon{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 0 20px 0;
-}
-
-.why-icon i {
-    font-size: 3rem;
-    color: #6B86A3;
 }
 .accordion-item, .accordion-header{
     border: 1px solid black;
@@ -341,16 +346,53 @@ body{
     background-color: #defff0;
     color: #198754;
 }
-.small-gray-text{
-    font-size: 14px;
-    color: gray;
-    margin-bottom: 0;
+/*Services*/
+.hero3{
+    background-image: url("/Images/hero_img.jpg");
+    padding: 200px;
+    height: 100px;
+
 }
-.progress-text{
+.hero3-text{
+    text-align: center;
+    color: #ffffff;
+}
+.card-svc{
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+    height: 300px;
+    width: 250px;
+}
+.container-svc{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.quick-action-link{
-    text-decoration: none;
-    color: black;
+.container-svc .row {
+    justify-content: center;
+    display: flex;
+    gap: 100px;
+}
+.svc-icon{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0 20px 0;
+}
+.svc-icon i {
+    font-size: 3rem;
+}
+.container2 .section2{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 20px;
+}
+.section2-image {
+    flex: 0 0 35%;
+}
+.section2-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
