@@ -359,6 +359,11 @@ body{
     text-decoration: none;
     color: black;
 }
+.pinfo-line{
+    width: 85%; 
+    margin-top: 10px; 
+    margin-right: 25px;
+}
 /*Services*/
 .hero3{
     background-image: url("/Images/hero_img.jpg");
