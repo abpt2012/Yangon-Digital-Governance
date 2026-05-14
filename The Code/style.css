@@ -415,3 +415,27 @@ body{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/*Terms and Conditions    text-white fw-bold bg-primary me-2 px-2 rounded d-inline-block*/
+.badge-tac{
+
+    color: white;
+    font-weight: bold;
+    background-color: #6B86A3;
+    margin-right: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 8px;
+    display: inline-block;
+
+}
+.tac-card{
+    padding: 15px;
+    border-radius: 12px;
+    border: rgb(210, 210, 210) solid 1px;
+    margin-bottom: 25px;
+}
+.tac-line{
+    height: 3px; 
+    background-color: rgb(71, 71, 71); 
+    opacity: 1;
+}

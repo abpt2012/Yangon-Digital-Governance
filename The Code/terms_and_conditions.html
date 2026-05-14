@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand d-flex align-items-center" href="">
+                <img src="#" alt="logo" height="50" class="me-2">
+                <div>
+                    <h4 class="mb-0">Y.D.G</h4>
+                    <p class="mb-0 small">Yangon Digital Governance</p>
+                </div>
+            </a>
+        
+            <form class="input-group w-50">
+                <input class="form-control" type="search" placeholder="Search for...">
+                <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+            </form>
+    
+            <div class="d-flex">
+                <button type="button" class="btn me-2 log" data-bs-toggle="modal" data-bs-target="#SignIn">
+                    Sign In  
+                </button>
+                <button type="button" class="btn sign" data-bs-toggle="modal" data-bs-target="#SignUp">
+                    Sign Up
+                </button>
+            </div>
+    
+        </div>
+    </nav>
+    
+    <nav class="navbar navbar-expand-lg nav_btm">
+        <div class="container d-flex align-items-center justify-content-between">            
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Applications</a>
+                            <ul class="dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="">Apply</a></li>
+                                <li><a class="dropdown-item" href="">Renew</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row">
+
+            <div class="col-md-3">
+                <h5 class="fw-bold mb-4" style="border-left: 4px solid #6B86A3; padding-left: 12px;">Quick Links</h5>
+                <ul style="list-style: none;">
+                    <li>
+                        <a href="#scopeofservices" class="text-black" style="text-decoration: none;">
+                            <p class="badge-tac">1</p>
+                            <span class="fw-bold">Scope of Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#userresponsibilities" class="text-black" style="text-decoration: none;">
+                            <p class="badge-tac">2</p>
+                            <span class="fw-bold">User Responsibilities</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#privacyandconfidentiality" class="text-black" style="text-decoration: none;">
+                            <p class="badge-tac">3</p>
+                            <span class="fw-bold">Privacy & Confidentiality</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#copyrightandownership" class="text-black" style="text-decoration: none;">
+                            <p class="badge-tac">4</p>
+                            <span class="fw-bold">Copyright & Ownership</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#serviceavailability" class="text-black" style="text-decoration: none;">
+                            <p class="badge-tac">5</p>
+                            <span class="fw-bold">Service Availability</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#limitationofliability" class="text-black" style="text-decoration: none;">
+                            <p class="badge-tac">6</p>
+                            <span class="fw-bold">Limitation of Liability</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-9">
+                <h1 class="fw-bold mb-4">Terms and Conditions</h1>
+                <p class="mb-5">Welcome to Yangon Digital Governance (YDG). Before using this platform and its services, please carefully review the following Terms and Conditions, as they outline the rules, responsibilities, and conditions governing the use of our website and digital services. By accessing or using this platform, you acknowledge that you have read, understood, and agreed to comply with these Terms and Conditions in their entirety.</p>
+                <div class="tac-card" id="scopeofservices">
+                    <h3 class="mt-2 mb-3 fw-bold">Scope of Services</h3>
+                    <p>Yangon Digital Governance (YDG) provides a centralized digital platform designed to improve access to selected public and government-related services. Through the platform, users may access services such as document applications, renewals, account management, application tracking, and informational resources related to official documentation and identification services.</p>
+                    <p>The services and features available on the platform may be updated, modified, expanded, or discontinued as necessary to improve functionality and user experience. YDG aims to provide users with a more efficient, accessible, and organized way of managing official services through a secure online environment.</p>
+                </div>
+                <div class="tac-card" id="userresponsibilities">
+                    <h3 class="mt-2 mb-3 fw-bold">User Responsibilities</h3>
+                    <p>Users are responsible for ensuring that all information submitted through the platform is accurate, complete, and truthful. Submission of false, misleading, or incomplete information may result in delays, rejection of applications, or restricted access to services. Users are also expected to use the platform in a lawful and respectful manner.</p>
+                    <p>Users are responsible for maintaining the confidentiality of their login credentials and account information. Any activity conducted through a user account will be considered the responsibility of the account holder. Unauthorized use of the platform, including attempts to disrupt services or gain unauthorized access, is strictly prohibited.</p>
+                </div>
+                <div class="tac-card" id="privacyandconfidentiality">
+                    <h3 class="mt-2 mb-3 fw-bold">Privacy & Confidentiality</h3>
+                    <p>YDG is committed to protecting the privacy and confidentiality of all users. Personal information and uploaded documents submitted through the platform are securely stored and handled using appropriate security measures, including encryption technologies, secure servers, and controlled access systems designed to protect user data.</p>
+                    <p>Information collected through the platform will only be used for purposes related to service delivery, account management, and application processing. YDG will take reasonable measures to safeguard user information and prevent unauthorized access, disclosure, or misuse of personal data.</p>
+                </div>
+                <div class="tac-card" id="copyrightandownership">
+                    <h3 class="mt-2 mb-3 fw-bold">Copyright & Ownership</h3>
+                    <p>All website content, including text, graphics, logos, layouts, icons, and platform designs, is the property of Yangon Digital Governance (YDG) unless otherwise stated. These materials are protected under applicable copyright and intellectual property laws and may not be reproduced, distributed, or modified without permission.</p>
+                    <p>Users may access and use website content solely for personal and non-commercial purposes related to the services provided by the platform. Unauthorized copying, redistribution, or misuse of any material from the website may result in legal or administrative action where applicable.</p>
+                </div>
+                <div class="tac-card" id="serviceavailability">
+                    <h3 class="mt-2 mb-3 fw-bold">Service Availability</h3>
+                    <p>YDG aims to provide stable and reliable access to all platform services; however, temporary interruptions or limitations may occasionally occur due to maintenance, system updates, technical issues, or circumstances beyond the platform’s control. Efforts will be made to minimize disruptions whenever possible.</p>
+                    <p>The platform reserves the right to modify, suspend, restrict, or discontinue specific features or services without prior notice if necessary for operational, technical, or security purposes. YDG does not guarantee uninterrupted or error-free access to the platform at all times.</p>
+                </div>
+                <div class="tac-card" id="limitationofliability">
+                    <h3 class="mt-2 mb-3 fw-bold">Limitation of Liability</h3>
+                    <p>YDG shall not be held responsible for delays, losses, or issues resulting from inaccurate information submitted by users, internet connectivity problems, third-party systems, or technical disruptions beyond the platform’s reasonable control. Users are encouraged to carefully review all information before submitting applications or requests.</p>
+                    <p>While reasonable efforts are made to ensure the accuracy and reliability of platform services, YDG does not guarantee that all information, services, or systems will always remain completely free from errors or interruptions. Use of the platform and its services is undertaken at the user’s own responsibility.</p>
+                </div>
+                <hr class="my-5 tac-line">
+                <p class="text-center">By using Yangon Digital Governance, you agree to abide by these Terms and Conditions. These Terms and Conditions may be updated by us at any time, and the latest version will be made available on our website. It is the Client's responsibility to review these terms periodically for any changes. If you have any questions or concerns regarding these Terms and Conditions, please contact Yangon Digital Governance at ydgmm@myanmar.gov.mm.</p>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="text-center py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-md-3 mb-3">
+                    <h5>Yangon Digital Goverance</h5>
+                    <p>Fast, Secure Government Services at Your Fingertips.</p>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Dashboard</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Applications</a>
+                            <ul class="dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="">Apply</a></li>
+                                <li><a class="dropdown-item" href="">Renew</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-md-3 mb-3">
+                    <h5>Legal Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="nav-item"><a href="" class="nav-link">Terms & Conditions</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Contact</h5>
+                    <p>Email: ydgmm@myanmar.gov.mm</p>
+                    <p>Phone: +95 9123469686</p>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-twitter-x"></i>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 Yangon Digital Goverance. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
