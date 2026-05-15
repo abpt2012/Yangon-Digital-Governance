@@ -89,10 +89,12 @@ body{
     margin: 20px;
 }
 .intro-image {
-    flex: 0 0 35%;
+    flex: 0 0 50%;
+    padding-left: 200px;
 }
 .intro-image img {
     width: 100%;
+    height: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -105,7 +107,7 @@ body{
 }
 .card-why{
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
-    height: 320px;
+    height: 290px;
 }
 
 .container-why{
