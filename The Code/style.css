@@ -382,7 +382,7 @@ body{
 }
 /*Services*/
 .hero3{
-    background-image: url("/Images/hero_img.jpg");
+    background-image: url("/Images/serviceshero.png");
     padding: 200px;
     height: 100px;
 
@@ -416,7 +416,7 @@ body{
 .svc-icon i {
     font-size: 3rem;
 }
-.container2 .section2{
+/*.container2 .section2{
     display: flex;
     align-items: center;
     gap: 50px;
@@ -430,6 +430,15 @@ body{
     height: 250px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}*/
+.color-theme{
+    color: #6B86A3;
+}
+.color-theme-bg{
+    background-color: #6B86A3;
+}
+.color-theme-bg:hover{
+    background-color: #88a3c1;
 }
 /*Terms and Conditions    text-white fw-bold bg-primary me-2 px-2 rounded d-inline-block*/
 .badge-tac{
