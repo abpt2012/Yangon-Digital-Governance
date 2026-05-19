@@ -217,8 +217,11 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .hero2{
-    background-image: url("/Images/hero_img.jpg");
-    padding: 200px;
+    background-image: url("/Images/customer-support.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 300px;
 
 }
 .hero2-text{
