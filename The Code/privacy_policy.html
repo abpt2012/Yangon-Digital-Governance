@@ -143,8 +143,7 @@
         </div>
     </div>
 
-
-<footer class="text-center py-4 mt-auto">
+    <footer class="text-center py-4 mt-auto">
         <div class="container">
             <div class="row">
 
@@ -157,17 +156,17 @@
                 <div class="col-md-3 mb-3">
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Dashboard</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown">Applications</a>
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Applications</a>
                             <ul class="dropdown-menu text-center">
                                 <li><a class="dropdown-item" href="">Apply</a></li>
                                 <li><a class="dropdown-item" href="">Renew</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -175,8 +174,8 @@
                 <div class="col-md-3 mb-3">
                     <h5>Legal Information</h5>
                     <ul class="list-unstyled">
-                        <li class="nav-item"><a href="" class="nav-link">Terms & Conditions</a></li>
-                        <li class="nav-item"><a href="" class="nav-link">Privacy Policy</a></li>
+                        <li class="nav-item"><a href="terms_and_conditions.html" class="nav-link">Terms & Conditions</a></li>
+                        <li class="nav-item"><a href="privacy_policy.html" class="nav-link">Privacy Policy</a></li>
                     </ul>
                 </div>
 
@@ -198,5 +197,97 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="SignIn">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Sign In</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body ">
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="name@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password123">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex flex-column">
+                    <button type="button" class="btn log w-100">
+                        Sign In
+                    </button>
+
+                    <a href="#SignUp" data-bs-toggle="modal">Don't have an account?</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="SignUp">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Register</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body ">
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Username</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-person"></i></span>
+                            <input type="email" class="form-control" placeholder="JohnDoe">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-envelope"></i></span>
+                            <input type="email" class="form-control" placeholder="name@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password123">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Retype Password</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-white"><i class="bi bi-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password123">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal-footer d-flex flex-column">
+                    <button type="button" class="btn sign w-100">
+                        Sign Up
+                    </button>
+
+                    <a href="#SignIn" data-bs-toggle="modal">Already have an account?</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
