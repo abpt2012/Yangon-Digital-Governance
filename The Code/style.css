@@ -69,6 +69,7 @@ body{
     gap: 50px;
     justify-content: space-between;
     overflow: hidden;
+    width: 100%;
 }
 .hero-image {
     height: 50%;
