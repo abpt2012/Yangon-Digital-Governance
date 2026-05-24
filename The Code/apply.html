@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-
-<nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container d-flex align-items-center justify-content-between">
             <a class="navbar-brand d-flex align-items-center" href="">
                 <img src="/Images/logo.png" alt="logo" height="50" class="me-3">
@@ -47,7 +46,7 @@
                         <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Applications</a>
+                            <a class="nav-link dropdown-toggle"role="button" data-bs-toggle="dropdown">Applications</a>
                                 <ul class="dropdown-menu text-center">
                                     <li><a class="dropdown-item" href="apply.html">Apply</a></li>
                                     <li><a class="dropdown-item" href="renew.html">Renew</a></li>
@@ -64,7 +63,7 @@
         </nav>
     </div>
 
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
@@ -106,32 +105,31 @@
         </button>
     </div>
 
+    <div class="container py-5 text-center">
 
-<div class="container py-5 text-center">
+    <div class="row g-4">
 
-<div class="row g-4">
+    <div class="col-md-4">
+    <i class="bi bi-shield-check fs-1 learn-more"></i>
+    <h5 class="mt-2">Secure</h5>
+    <p>Government-grade security</p>
+    </div>
 
-<div class="col-md-4">
-<i class="bi bi-shield-check fs-1 learn-more"></i>
-<h5 class="mt-2">Secure</h5>
-<p>Government-grade security</p>
-</div>
+    <div class="col-md-4">
+    <i class="bi bi-lightning-charge fs-1 learn-more"></i>
+    <h5 class="mt-2">Fast Processing</h5>
+    <p>Quick online applications</p>
+    </div>
 
-<div class="col-md-4">
-<i class="bi bi-lightning-charge fs-1 learn-more"></i>
-<h5 class="mt-2">Fast Processing</h5>
-<p>Quick online applications</p>
-</div>
+    <div class="col-md-4">
+    <i class="bi bi-phone fs-1 learn-more"></i>
+    <h5 class="mt-2">Mobile Friendly</h5>
+    <p>Works on all devices</p>
+    </div>
 
-<div class="col-md-4">
-<i class="bi bi-phone fs-1 learn-more"></i>
-<h5 class="mt-2">Mobile Friendly</h5>
-<p>Works on all devices</p>
-</div>
+    </div>
 
-</div>
-
-</div>
+    </div>
 
     <div class="container" id="apply-cards">
         <div class="row g-4">
@@ -141,38 +139,57 @@
 
                     <div class="card-body">
                         <h5 class="card-title">
-                            Underage National ID
+                            National ID
                         </h5>
                         <p class="card-text">
-                            Apply for a new national identification card.
+                            Apply for a new identification card for official verification and services.
                         </p>
-                        <a href="underageid_form.html" class="btn service-carousel-btn w-100">
-                            Apply
-                        </a>
+                        <div class="dropdown w-100">
+                            <button class="btn service-carousel-btn dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+                                Apply
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" href="underageid_form.html">Underage</a></li>
+                                <li><a class="dropdown-item" href="adultid_form.html">Mature</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
-    
             <div class="col-md-3">
                 <div class="card border-0 shadow-sm h-100">
                     <img src="/Images/driving_license.jpeg" class="card-img-top">
 
                     <div class="card-body">
                         <h5 class="card-title">
-                            Driver License
+                            Driving License
                         </h5>
                         <p class="card-text">
-                            Apply for your new official driving license.
+                            Apply for a new driving license to legally operate vehicles.
                         </p>
-                        <a href="license_form.html" class="btn service-carousel-btn2 w-100">
-                            Apply
-                        </a>
+
+                        <div class="dropdown w-100">
+                            <button class="btn service-carousel-btn2 dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+                                Apply
+                            </button>
+
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" href="license_L.html">“L” License</a></li>
+                                <li><a class="dropdown-item" href="license_A.html">“A” License</a></li>
+                                <li><a class="dropdown-item" href="license_B.html">“B” License</a></li>
+                                <li><a class="dropdown-item" href="license_C.html">“C” License</a></li>
+                                <li><a class="dropdown-item" href="license_D.html">“D” License</a></li>
+                                <li><a class="dropdown-item" href="license_E.html">“E” License</a></li>
+                                <li><a class="dropdown-item" href="license_G.html">“G” License</a></li>
+                                <li><a class="dropdown-item" href="license_H.html">“H” License</a></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-    
             <div class="col-md-3">
                 <div class="card border-0 shadow-sm h-100">
                     <img src="/Images/passport.jpeg" class="card-img-top">
@@ -182,15 +199,20 @@
                             Passport
                         </h5>
                         <p class="card-text">
-                            Apply for a passport for international travel.
+                            Apply for a new passport for international travel.
                         </p>
-                        <a href="passport_form.html" class="btn service-carousel-btn w-100">
-                            Apply
-                        </a>
+                        <div class="dropdown w-100">
+                            <button class="btn service-carousel-btn dropdown-toggle w-100" type="button" data-bs-toggle="dropdown">
+                                Apply
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" href="underagepassport_form.html">Underage</a></li>
+                                <li><a class="dropdown-item" href="adultpassport_form.html">Mature</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
     
             <div class="col-md-3">
                 <div class="card border-0 shadow-sm h-100">
@@ -201,7 +223,7 @@
                             Smart Card
                         </h5>
                         <p class="card-text">
-                            Apply for a secure multi-purpose smart card.
+                            Apply for a new secure multi-purpose smart card.
                         </p>
                         <a href="smartcard_form.html" class="btn service-carousel-btn2 w-100">
                             Apply
@@ -216,67 +238,69 @@
 <br>
 <br>
 
-<div class="container pb-5">
+    <div class="container pb-5">
 
-    <div class="row g-4">
+        <div class="row g-4">
 
-        <div class="col-md-6">
+            <div class="col-md-6">
 
-<div class="bg-white shadow-sm rounded p-4 h-100">
+    <div class="bg-white shadow-sm rounded p-4 h-100">
 
-<h4 class="fw-bold mb-3">Application Tips</h4>
+    <h4 class="fw-bold mb-3">Application Tips</h4>
 
-<div class="alert alert-warning py-2">
-Fill all fields correctly before submitting
-</div>
+    <div class="alert alert-warning py-2">
+    Fill all fields correctly before submitting
+    </div>
 
-<ul class="list-group">
+    <ul class="list-group">
 
-<li class="list-group-item">
-Use your legal full name only
-</li>
+    <li class="list-group-item">
+    Use your legal full name only
+    </li>
 
-<li class="list-group-item">
-Make sure DOB matches your birth certificate
-</li>
+    <li class="list-group-item">
+    Make sure DOB matches your birth certificate
+    </li>
 
-<li class="list-group-item">
-Upload clear, uncropped documents
-</li>
+    <li class="list-group-item">
+    Upload clear, uncropped documents
+    </li>
 
-<li class="list-group-item">
-Double-check information
-</li>
+    <li class="list-group-item">
+    Double-check information
+    </li>
 
-</ul>
+    </ul>
 
-</div>
+    </div>
 
-</div>
+    </div>
 
-        <div class="col-md-6">
+            <div class="col-md-6">
 
-            <div class="bg-white shadow-sm rounded p-4 h-100">
+                <div class="bg-white shadow-sm rounded p-4 h-100">
 
-                <h4 class="fw-bold mb-3">
-                    Application Process
-                </h4>
+                    <h4 class="fw-bold mb-3">
+                        Application Process
+                    </h4>
 
-                <ol class="list-group list-group-numbered">
+                    <ol class="list-group list-group-numbered">
 
-                    <li class="list-group-item">
-                        Fill application form
-                    </li>
+                        <li class="list-group-item">
+                            Fill application form
+                        </li>
 
-                    <li class="list-group-item">
-                        Upload documents
-                    </li>
+                        <li class="list-group-item">
+                            Upload documents
+                        </li>
 
-                    <li class="list-group-item">
-                        Submit request
-                    </li>
+                        <li class="list-group-item">
+                            Submit request
+                        </li>
 
-                </ol>
+                    </ol>
+
+                </div>
 
             </div>
 
@@ -284,22 +308,7 @@ Double-check information
 
     </div>
 
-</div>
-
-
-<div class="container">
-        <ul class="pagination justify-content-center py-4 mb-0 custom-pagination">
-            <li class="page-item"><a class="page-link" href="index.html">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="index.html">1</a></li>
-            <li class="page-item active"><a class="page-link" href="services.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="dashboard.html">3</a></li>
-            <li class="page-item"><a class="page-link" href="apply.html">4</a></li>
-            <li class="page-item"><a class="page-link" href="contact.html">5</a></li>
-            <li class="page-item"><a class="page-link" href="dashboard.html">Next</a></li>
-        </ul>
-    </div>
-    
-    <footer class="pb-3 pt-5 mt-auto">
+    <footer class="text-center py-4 mt-auto">
         <div class="container">
             <div class="row">
 
