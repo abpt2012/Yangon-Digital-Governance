@@ -402,6 +402,16 @@ body{
     width: 100%;
     margin-bottom: 20vh;
 }
+.overview-img{
+    width: 90%;
+    height: 95%;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 15px;
+}
 .stat-card {
     padding: 15px;
     border-radius: 12px;
@@ -431,7 +441,15 @@ body{
 .progress-bar {
     background-color: #0d6efd;
 }
- 
+.progress-height-10{
+    height: 10px;
+}
+.progress-width-75{
+    width: 75%;
+}
+.progress-width-80{
+    width: 80%;
+}
 .text-purple {
     color: #8b5cf6;
 }
@@ -682,10 +700,6 @@ body{
     height:450px;
     object-fit:cover;
     filter:brightness(60%);
-}
-.card img{
-    height:220px;
-    object-fit:cover;
 }
 .btns{
     border-radius: 0;
