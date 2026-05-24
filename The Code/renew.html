@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
- 
-<nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container d-flex align-items-center justify-content-between">
             <a class="navbar-brand d-flex align-items-center" href="">
                 <img src="/Images/logo.png" alt="logo" height="50" class="me-3">
@@ -63,8 +62,60 @@
             </div>
         </nav>
     </div>
+
+
+    <button class="chat-toggle btn shadow" type="button" data-bs-toggle="collapse" data-bs-target="#chatBox">
+        <i class="bi bi-chat-dots-fill"></i>
+    </button>
+
+    <div class="collapse chat-container" id="chatBox">
+        <div class="card border-0 shadow-lg">
+
+            <div class="chat-header d-flex justify-content-between align-items-center p-3">
+                <div class="d-flex align-items-center">
+                    <div class="bot-avatar me-2">
+                        <i class="bi bi-robot"></i>
+                    </div>
+                    <div>
+                        <h6 class="mb-0 fw-bold">YDG Assistant</h6>
+                        <small>Online now</small>
+                    </div>
+                </div>
+
+                <button class="btn-close btn-close-white" data-bs-toggle="collapse" data-bs-target="#chatBox">
+                </button>
+            </div>
+
+            <div class="chat-body p-3">
+
+                <div class="bot-message">
+                    Hello 👋 <br>
+                    How can we help you today?
+                </div>
+
+                <div class="user-message ms-auto">
+                    I want to renew my passport.
+                </div>
+
+                <div class="bot-message">
+                    You can apply through the <a href="renew.html">Renew</a> page.
+                </div>
+
+            </div>
+
+            <div class="chat-footer p-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Type your message...">
+                    <button class="btn send-btn">
+                        <i class="bi bi-send-fill"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
  
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
  
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
@@ -107,37 +158,37 @@
     </div>
  
  
-<div class="container py-5 text-center">
- 
-<div class="row g-4">
- 
-<div class="col-md-4">
-<i class="bi bi-shield-check fs-1 learn-more"></i>
-<h5 class="mt-2">Secure</h5>
-<p>Government-grade security</p>
-</div>
- 
-<div class="col-md-4">
-<i class="bi bi-lightning-charge fs-1 learn-more"></i>
-<h5 class="mt-2">Fast Processing</h5>
-<p>Quick online applications</p>
-</div>
- 
-<div class="col-md-4">
-<i class="bi bi-phone fs-1 learn-more"></i>
-<h5 class="mt-2">Mobile Friendly</h5>
-<p>Works on all devices</p>
-</div>
- 
-</div>
- 
-</div>
+    <div class="container py-5 text-center">
+    
+    <div class="row g-4">
+    
+    <div class="col-md-4">
+    <i class="bi bi-shield-check fs-1 learn-more"></i>
+    <h5 class="mt-2">Secure</h5>
+    <p>Government-grade security</p>
+    </div>
+    
+    <div class="col-md-4">
+    <i class="bi bi-lightning-charge fs-1 learn-more"></i>
+    <h5 class="mt-2">Fast Processing</h5>
+    <p>Quick online applications</p>
+    </div>
+    
+    <div class="col-md-4">
+    <i class="bi bi-phone fs-1 learn-more"></i>
+    <h5 class="mt-2">Mobile Friendly</h5>
+    <p>Works on all devices</p>
+    </div>
+    
+    </div>
+    
+    </div>
  
     <div class="container" id="apply-cards">
         <div class="row g-4">
             <div class="col-md-3">
                 <div class="card border-0 shadow-sm h-100">
-                    <img src="/Images/national_id.png" class="card-img-top">
+                    <img src="/Images/national_id.png" class="card-img-top svc-img">
  
                     <div class="card-body">
                         <h5 class="card-title">
@@ -156,7 +207,7 @@
    
             <div class="col-md-3">
                 <div class="card border-0 shadow-sm h-100">
-                    <img src="/Images/driving_license.jpeg" class="card-img-top">
+                    <img src="/Images/driving_license.jpeg" class="card-img-top svc-img">
  
                     <div class="card-body">
                         <h5 class="card-title">
@@ -175,7 +226,7 @@
    
             <div class="col-md-3">
                 <div class="card border-0 shadow-sm h-100">
-                    <img src="/Images/passport.jpeg" class="card-img-top">
+                    <img src="/Images/passport.jpeg" class="card-img-top svc-img">
  
                     <div class="card-body">
                         <h5 class="card-title">
@@ -194,7 +245,7 @@
    
             <div class="col-md-3">
                 <div class="card border-0 shadow-sm h-100">
-                    <img src="/Images/Smart Card.jpg" class="card-img-top">
+                    <img src="/Images/Smart Card.jpg" class="card-img-top svc-img">
  
                     <div class="card-body">
                         <h5 class="card-title">

@@ -363,7 +363,7 @@ body{
     box-shadow: none;
 }
 .svc{
-    border-radius: 0;
+    border-radius: 7px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
@@ -413,11 +413,16 @@ body{
     margin: auto;
 }
 .msg{
-    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
     background-color: #6B86A3;
     color: whitesmoke;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.msg:hover{
+    background-color: #6B86A3;
+    color: whitesmoke;
+    transform: translateY(-3px);
 }
 .hero2{
     background-image: url("/Images/contactushero.jpeg");
@@ -436,11 +441,16 @@ body{
     color: white;
 }
 .snd{
-    border: 1px solid black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 7px;
     background-color: #6B86A3;
     color: whitesmoke;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.snd:hover{
+    background-color: #6B86A3;
+    color: whitesmoke;
+    transform: translateY(-3px);
 }
 /*Dashboard*/
 .offcanvas-container{
@@ -515,6 +525,13 @@ body{
     border: none;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
+.btm-card{
+    height: 190px;
+    padding: 15px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
  
 .doc-card {
     background: white;
@@ -523,6 +540,7 @@ body{
     border: 1px solid #eee;
     transition: 0.2s;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    height: 360px;
 }
  
 .doc-card:hover {
@@ -719,7 +737,10 @@ body{
     background-color: rgb(71, 71, 71); 
     opacity: 1;
 }
-/*Applications*/
+/*Applications and Renewal*/
+.svc-img{
+    height: 160px;
+}
 .carousel-item1{
     background-color: #6B86A3;
     padding: 100px;
