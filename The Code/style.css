@@ -504,28 +504,40 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+
 .hero3-text{
     text-align: center;
     color: #ffffff;
 }
+
 .card-svc{
     box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
-    height: 300px;
-    width: 250px;
+    min-height: 300px;
+    width: 100%;
+    border: none;
+    border-radius: 18px;
+    transition: 0.3s;
+    margin-bottom: 25px;
 }
+
+.card-svc:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
 .container-svc{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .container-svc .row {
     justify-content: center;
     display: flex;
-    gap: 100px;
 }
+
 .svc-icon{
     justify-content: center;
     align-items: center;
@@ -535,29 +547,38 @@ body{
 .svc-icon i {
     font-size: 3rem;
 }
-/*.container2 .section2{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin: 20px;
-}
-.section2-image {
-    flex: 0 0 35%;
-}
-.section2-image img {
-    width: 100%;
-    height: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}*/
 .color-theme{
     color: #6B86A3;
 }
 .color-theme-bg{
     background-color: #6B86A3;
 }
+
 .color-theme-bg:hover{
     background-color: #88a3c1;
+}
+.svc-image{
+    height: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+@media (max-width: 768px){
+
+    .hero3{
+        height: 35vh;
+    }
+
+    .container-svc .row{
+        gap: 20px;
+    }
+
+    .card-svc{
+        min-height: auto;
+    }
+
+    .svc-image{
+        height: 250px;
+        margin-bottom: 20px;
+    }
 }
 /*Terms and Conditions    text-white fw-bold bg-primary me-2 px-2 rounded d-inline-block*/
 .badge-tac{
