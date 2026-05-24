@@ -537,7 +537,7 @@ body{
     border-radius: 12px;
     border: none;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    height: 450px;
+
 }
 .card-card{
     padding: 15px;
@@ -560,7 +560,6 @@ body{
     border: 1px solid #eee;
     transition: 0.2s;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    height: 360px;
 }
  
 .doc-card:hover {
@@ -815,6 +814,7 @@ body{
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+    border: none;
     background-color: #6B86A3;
     color: whitesmoke;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -860,20 +860,6 @@ body{
     height: auto;
     border-radius: 10px;
 }
-.btns{
-    border: 1px solid black;
-    border-radius: 7px;
-    background-color: #6B86A3;
-    color: whitesmoke;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.btns:hover{
-    border: 1px solid black;
-    transform: translateY(-3px);
-    
-}
 
 .nav-pills .nav-link{
     color: #5d6b7a;
@@ -908,11 +894,20 @@ body{
     right:-180px;
 }
 .service-img{
-    height: 300px;
-    width: 500px;
-}
-.service-img, img{
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: contain;
     border-radius: 20px;
+}
+
+@media (max-width: 991px){
+
+    .service-img{
+        max-width: 320px;
+        margin-top: 20px;
+    }
+
 }
 .carousel .row{
     display: flex;
