@@ -143,12 +143,24 @@ p{
 footer{
     background-color: rgb(255, 255, 255);
 }
+.custom-pagination{
+    flex-wrap: wrap;
+    
+}
 .custom-pagination .page-link {
     color: whitesmoke;
     background-color: #6B86A3;
     padding: 10px 18px;
     margin: 0 5px;
     transition: all 0.3s ease;
+}
+@media (max-width: 576px) {
+    .custom-pagination .page-link {
+        padding: 8px 15px;
+        margin: 0 3px;
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
 }
 .custom-pagination .page-link:hover {
     background-color: #6B86A3;
@@ -228,6 +240,11 @@ body{
     width: 85vw;
     border-top: 3px solid #6B86A3;
     margin: 100px 0;
+}
+.between-sections-small{
+    width: 85vw;
+    border-top: 3px solid #6B86A3;
+    margin: 50px 0;
 }
 .learn-more{
     text-decoration: none;
@@ -319,8 +336,9 @@ body{
 }
 @media (max-width: 991px) {
     .timeline {
+        border-left: none;
         margin-left: 0;
-        padding-left: 13px;
+        padding-left: 0;
     }
     .timeline-content {
         width: 100%;
@@ -330,6 +348,11 @@ body{
         margin-left: 0;
         padding-left: 16px;
         left: -13px;  
+    }
+    .circle{
+        width: 0;
+        height: 0;
+        opacity: 0;
     }
 }
 .circle{
@@ -483,7 +506,11 @@ body{
     margin-top: 40vh;
     margin-right: 10px;
     z-index: 100;
-   
+}
+@media (max-width: 768px) {
+    .dashboard-btn {
+        margin-top: 10vh;
+    }
 }
 .dashboard-gray{
     color: rgb(158, 158, 158);
@@ -621,12 +648,18 @@ body{
     background-position: center;
     object-fit: cover;
     background-size: cover;
-    height: 50vh;
+    min-height: 50vh;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+@media (max-width: 768px) {
+  .hero3 {
+    min-height: 40vh;
+  }
+}
+
 
 .hero3-text{
     text-align: center;
@@ -675,9 +708,16 @@ body{
 .color-theme-bg{
     background-color: #6B86A3;
 }
-
 .color-theme-bg:hover{
     background-color: #88a3c1;
+}
+.color-theme-btn{
+    background-color: #6B86A3;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border-radius: 5px;
 }
 .svc-image{
     height: 400px;
@@ -886,13 +926,7 @@ body{
     object-fit:cover;
 }
 
-.circle{
-    width:550px;
-    height:550px;
-    background:rgba(255,255,255,0.05);
-    top:-250px;
-    right:-180px;
-}
+
 .service-img{
     width: 100%;
     max-width: 420px;
