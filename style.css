@@ -448,7 +448,7 @@ body{
     transform: translateY(-3px);
 }
 .hero2{
-    background-image: url("/Images/contactushero.jpeg");
+    background-image: url("Images/contactushero.jpeg");
     background-position: bottom;
     object-fit: cover;
     background-size: 100% 100%;
@@ -644,7 +644,7 @@ body{
 }
 /*Services*/
 .hero3{
-    background-image: url("/Images/serviceshero.png");
+    background-image: url("Images/serviceshero.png");
     background-position: center;
     object-fit: cover;
     background-size: cover;
@@ -980,3 +980,4 @@ body{
     background-size: 60%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
